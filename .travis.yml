@@ -1,13 +1,15 @@
 language: go
+
+os:
+    - osx  # TODO(minusnine): Add back linux before committing.
 go:
     - 1.7.x
 
 jdk:
     - openjdk7
 
-before_script:
-    - "export DISPLAY=:99.0"
-    - "sh -e /etc/init.d/xvfb start"
-    - sleep 3 # give xvfb some time to start
+addons:
+  firefox: "latest"
+
 script: ./testing/travis-ci-test.sh
 sudo: false
