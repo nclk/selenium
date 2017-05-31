@@ -40,11 +40,6 @@ var files = []file{
 		hash: "21cbbd775678821b6b72c208b8d59664a4c7381b3c50b008b331914d2834ec8d",
 	},
 	{
-		url:  "http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar",
-		name: "selenium-server-standalone-2.53.1.jar",
-		hash: "1cce6d3a5ca5b2e32be18ca5107d4f21bddaa9a18700e3b117768f13040b7cf8",
-	},
-	{
 		url:    "https://chromedriver.storage.googleapis.com/2.29/chromedriver_linux64.zip",
 		name:   "chromedriver_2.29_linux64.zip",
 		hash:   "bb2cf08f2c213f061d6fbca9658fc44a367c1ba7e40b3ee1e3ae437be0f901c2",
@@ -55,13 +50,6 @@ var files = []file{
 		name:   "geckodriver-v0.16.1-linux64.tar.gz",
 		hash:   "dcadab8586264cf33aae1fff0897520d46e39dad4580c6cae712452fdc59e529",
 		rename: []string{"geckodriver", "geckodriver-v0.16.1-linux64"},
-	},
-	{
-		url:     "https://ftp.mozilla.org/pub/firefox/releases/47.0.2/linux-x86_64/en-US/firefox-47.0.2.tar.bz2",
-		name:    "firefox-47-0.2.tar.bz2",
-		hash:    "ea88e5d18438d1b80e6048fa2cfbaa90875fba8f42ef5bddc191b6bfd90af672",
-		browser: true,
-		rename:  []string{"firefox", "firefox-47"},
 	},
 	{
 		// This is a recent nightly. Update this path periodically.
