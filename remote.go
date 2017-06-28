@@ -982,9 +982,8 @@ func (wd *remoteWD) ButtonUp() error {
 func (wd *remoteWD) SendModifier(modifier string, isDown bool) error {
 	if isDown {
 		return wd.KeyDown(modifier)
-	} else {
-		return wd.KeyUp(modifier)
 	}
+	return wd.KeyUp(modifier)
 }
 
 func (wd *remoteWD) keyAction(action, keys string) error {
