@@ -1269,7 +1269,7 @@ func (elem *remoteWE) location(suffix string) (*Point, error) {
 	if err != nil {
 		return nil, err
 	}
-	return &Point{int(rect.X), int(rect.Y)}, nil
+	return &Point{float32(rect.X), float32(rect.Y)}, nil
 }
 
 func (elem *remoteWE) Location() (*Point, error) {

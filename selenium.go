@@ -178,7 +178,7 @@ type Status struct {
 
 // Point is a 2D point.
 type Point struct {
-	X, Y int
+	X, Y float32
 }
 
 // Size is a size of HTML element.
